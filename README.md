@@ -68,5 +68,5 @@ Below you can see me assigning the reserved property ref to the button element.
 
 ~~Timer~~\
 ~~Roll Counter~~\
-Real die faces\
+~~Real die faces~~\
 ~~Deploy~~
