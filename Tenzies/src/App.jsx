@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import Die from './Die';
+import Die from './Die/Die.jsx';
 import { nanoid } from 'nanoid';
 import Confetti from 'react-confetti';
 
@@ -22,7 +22,7 @@ export default function App() {
   function generateAllNewDice() {
     return new Array(10).fill(0).map(() => ({
       // value: Math.ceil(Math.random() * 6),
-      value: 5,
+      value: Math.ceil(Math.random() * 6),
       isHeld: false,
       id: nanoid(),
     }));
