@@ -1,2 +1,0 @@
-# Tenzies
-Dice rolling game
