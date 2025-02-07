@@ -50,7 +50,8 @@ main {
   margin-bottom: 40px;
 }
 
-button {
+button,
+#counter {
   font-family: Karla, sans-serif;
   cursor: pointer;
 }
@@ -66,7 +67,15 @@ button {
   font-weight: bold;
 }
 
-button.roll-dice {
+.actions-div {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button.roll-dice,
+#counter {
   height: 50px;
   white-space: nowrap;
   width: auto;
@@ -76,6 +85,13 @@ button.roll-dice {
   background-color: #5035ff;
   color: white;
   font-size: 1.2rem;
+}
+
+#counter {
+  margin-left: 21%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sr-only {

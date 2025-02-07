@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import Die from './Die/Die.jsx';
+import Counter from './Counter/Counter.jsx';
 import { nanoid } from 'nanoid';
 import Confetti from 'react-confetti';
 
 export default function App() {
   const [dice, setDice] = useState(() => generateAllNewDice());
+  const [count, setCount] = useState(0);
 
   const gameWon =
     dice.every((die) => die.isHeld) &&
@@ -30,6 +32,7 @@ export default function App() {
 
   function rollDice() {
     if (!gameWon) {
+      setCount(count + 1);
       setDice((oldDice) =>
         oldDice.map((die) =>
           die.isHeld
@@ -38,6 +41,7 @@ export default function App() {
         )
       );
     } else {
+      setCount(0);
       setDice(generateAllNewDice());
     }
   }
@@ -75,9 +79,16 @@ export default function App() {
         at its current value between rolls.
       </p>
       <div className="dice-container">{diceElements}</div>
-      <button ref={rollBtn} className="roll-dice" onClick={rollDice}>
-        {gameWon ? 'New Game' : 'Roll'}
-      </button>
+      <div className="actions-div">
+        <button
+          ref={rollBtn}
+          className="roll-dice"
+          onClick={rollDice}
+        >
+          {gameWon ? 'New Game:' : 'Roll'}
+        </button>
+        <Counter state={count} />
+      </div>
     </main>
   );
 }
