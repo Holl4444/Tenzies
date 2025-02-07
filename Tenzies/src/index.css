@@ -92,6 +92,7 @@ button.roll-dice,
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 5rem;
 }
 
 .sr-only {
