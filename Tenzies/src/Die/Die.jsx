@@ -1,6 +1,6 @@
 export default function Die(props) {
   const styles = {
-    backgroundColor: props.isHeld ? '#59E391' : 'white',
+    backgroundColor: props.isHeld ? '#DF9547' : 'white',
   };
 
   return (
