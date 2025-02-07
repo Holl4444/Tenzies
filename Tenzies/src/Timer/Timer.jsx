@@ -1,5 +1,7 @@
 export default function Timer(props) {
   return (
+    //Start timer button, text becomes the timer itself until the timer is reset
+    //Add simple time formatting
     <button onClick={props.fn} ref={props.timerElement} id="timer">
       {props.timer > 0
         ? props.timer > 59
@@ -9,5 +11,3 @@ export default function Timer(props) {
     </button>
   );
 }
-
-

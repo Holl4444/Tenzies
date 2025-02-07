@@ -14,15 +14,13 @@ export default function App() {
     dice.every((die) => die.isHeld) &&
     dice.every((die) => die.value === dice[0].value);
 
-  //Start timer button, text becomes the timer itself until the timer is reset
-
   const rollBtn = useRef(null);
   useEffect(() => {
     if (gameWon) {
-      // if gameWon then set focus to Roll/NewGame button
+      // if gameWon then set focus to Roll / NewGame button
       // Access external DOM node and call .focus()
-      //stop the timer
       rollBtn.current.focus();
+      //stop the timer
       endTimer();
     }
   }, [gameWon]);
@@ -52,7 +50,6 @@ export default function App() {
   };
   function generateAllNewDice() {
     return new Array(10).fill(0).map(() => ({
-      // value: Math.ceil(Math.random() * 6),
       value: Math.ceil(Math.random() * 6),
       isHeld: false,
       id: nanoid(),
