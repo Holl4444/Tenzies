@@ -68,9 +68,9 @@ button,
 }
 
 .actions-div {
-  width: 100%;
+  width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -93,6 +93,7 @@ button.roll-dice,
   align-items: center;
   justify-content: center;
   min-width: 4.6rem;
+  margin-left: auto;
 }
 
 .sr-only {
