@@ -85,7 +85,7 @@ export default function App() {
           className="roll-dice"
           onClick={rollDice}
         >
-          {gameWon ? 'New Game:' : 'Roll'}
+          {gameWon ? 'New Game' : 'Roll'}
         </button>
         <Counter state={count} />
       </div>
