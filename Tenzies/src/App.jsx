@@ -32,7 +32,7 @@ export default function App() {
 
   function rollDice() {
     if (!gameWon) {
-      setCount(count + 1);
+      setCount((prevCount) => prevCount + 1);
       setDice((oldDice) =>
         oldDice.map((die) =>
           die.isHeld
