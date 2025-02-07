@@ -70,7 +70,7 @@ button,
 .actions-div {
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -88,12 +88,12 @@ button.roll-dice,
   font-size: 1.2rem;
 }
 
-#counter {
+#counter,
+#timer {
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 4.6rem;
-  margin-left: auto;
 }
 
 .sr-only {
