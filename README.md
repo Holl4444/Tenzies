@@ -5,6 +5,7 @@
 * [Tools Used](#tools-used)
 * [Challenges](#challenges)
 * [Code of Special Interest](#code-of-special-interest)
+* [Stretch Goals](#stretch-goals)
 
 ## Overview
 *Originally coded as part of Scrimba's Learn React course. One of two final capstone projects.*
@@ -60,3 +61,6 @@ Below you can see me assigning the reserved property ref to the button element.
                 {gameWon ? "New Game" : "Roll"}
             </button>
 ```
+
+### Stretch Goals:
+![Stretch](https://github.com/user-attachments/assets/ddc6668b-15a5-47d1-9584-2a2ee876b463)
