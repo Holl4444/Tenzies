@@ -48,6 +48,7 @@ export default function App() {
     timerElement.current = 0;
     setSeconds(0);
   };
+  
   function generateAllNewDice() {
     return new Array(10).fill(0).map(() => ({
       value: Math.ceil(Math.random() * 6),
