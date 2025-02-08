@@ -15,6 +15,10 @@ This can be acheived by holding dice with values you want to keep and rolling th
 
 ## Screenshots
 
+
+https://github.com/user-attachments/assets/5d2f1ba9-d4c4-4a77-a3c2-382ccf3d0a64
+
+
 ![image](https://github.com/user-attachments/assets/a3591422-9698-4c3a-9f70-fe7a84cb9a3d)
 
 
