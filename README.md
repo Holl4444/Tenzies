@@ -28,9 +28,9 @@ https://github.com/user-attachments/assets/5d2f1ba9-d4c4-4a77-a3c2-382ccf3d0a64
 React - JSX - JS - Vite
 
 ## Challenges:
-*To employ useEffect and useRef
-*To import confetti
-*To consider accessibility
+* To employ useEffect and useRef
+* To import confetti
+* To consider accessibility
 
 ## Code of special interest
 
