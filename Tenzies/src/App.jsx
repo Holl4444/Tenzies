@@ -27,14 +27,15 @@ export default function App() {
 
   const timerElement = useRef(null);
   const setTimer = () => {
-    //set timer interval to count seconds within the timer element.
-    timerElement.current = setInterval(() => {
-      setSeconds((prevSecs) => prevSecs + 1);
-      if (seconds > 1799) {
-        endTimer();
-        alert('timed out');
-      }
-    }, 1000);
+  
+      //set timer interval to count seconds within the timer element.
+      timerElement.current = setInterval(() => {
+        setSeconds((prevSecs) => prevSecs + 1);
+        if (seconds > 1799) {
+          endTimer();
+          alert('timed out');
+        }
+      }, 1000);
   };
 
   //Need to call if game over or timer exceeds 1800 seconds (30mins)
