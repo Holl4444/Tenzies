@@ -7,7 +7,6 @@ export default function Timer(props) {
     //Start timer button, text becomes the timer itself until the timer is reset
     //Add simple time formatting
     //disable button after timer started
-    <>
       <button
         disabled={props.timer && 'disabled'}
         onClick={handleClick}
@@ -20,13 +19,5 @@ export default function Timer(props) {
             : `${props.timer}s`
           : 'Start Timer'}
       </button>
-      <button
-        onClick={() => {
-          throw new Error('This is your first error!');
-        }}
-      >
-        Break the world
-      </button>
-    </>
   );
 }
