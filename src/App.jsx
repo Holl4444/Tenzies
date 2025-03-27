@@ -103,7 +103,8 @@ export default function App() {
       <div aria-live="polite" className="sr-only">
         {gameWon && (
           <p>
-            Congratulations! You won! Press "New Game" to start again.
+            Congratulations! You won! Press &apos;New Game&apos; to
+            start again.
           </p>
         )}
       </div>
